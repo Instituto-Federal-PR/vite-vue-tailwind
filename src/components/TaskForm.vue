@@ -4,6 +4,7 @@
 
   const { addTask } = useTasks();
 
+  // reactive: torna todas as três propriedades reativas (name,type date)
   const form = reactive({
     name: '',
     type: '',

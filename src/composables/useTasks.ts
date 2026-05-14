@@ -9,6 +9,7 @@ export function useTasks() {
   watch(tasks, (newList) => {
     localStorage.setItem('activities', JSON.stringify(newList));
   }, { deep: true });
+  // Força o watch a monitorar o que acontece dentro de um objeto ou array 
 
   const addTask = (task: Task) => {
     tasks.value.push(task);
